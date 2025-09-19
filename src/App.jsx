@@ -1,3 +1,4 @@
+import Produtos from "./pages/produtos"
 import { useState } from "react"
 
 function App(){
@@ -6,22 +7,11 @@ function App(){
 
   return (
     <div>
-      <h3>Pizzaria 2D</h3>
-
-      <input
-        className="nome"
-        onChange={(e)=>{setNome(e.target.value)}}
-        type="text" />
-
-      <button
-        className="botao"
-        onClick={()=>{
-          alert('O nome digita foi ' + nome)
-        }
-        }
-      >
-        CLIQUE AQUI
-      </button>
+      <h1>Pizzaria 2D</h1>
+<Produtos />
+<Produtos />
+<Produtos />
+      
 
     </div>
   )
